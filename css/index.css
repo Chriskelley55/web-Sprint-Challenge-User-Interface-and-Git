@@ -70,7 +70,15 @@ p {
     width: 800px;
     margin: 0 auto;
 }
-
+nav { 
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding: 20px 2%;
+}
+nav a{
+    text-decoration: none;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -84,7 +92,13 @@ p {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
-
+.top-image {
+    padding: 5%;
+}
+.text-container.p {
+    display: flex;
+    align-content: flex-start;
+}
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -101,7 +115,7 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes #box {
     width: 12.5%;
     height: 100px;
     background: black;
@@ -111,13 +125,60 @@ p {
     align-items: center;
     justify-content: center;
 }
-
+.middle-content .boxes #box.box1{
+    background: teal;
+}.middle-content .boxes #box.box2{
+    background: gold;
+}.middle-content .boxes #box.box3{
+    background: cadetblue;
+}.middle-content .boxes #box.box4{
+    background: coral;
+}.middle-content .boxes #box.box5{
+    background: crimson;
+}.middle-content .boxes #box.box6{
+    background: forestgreen;
+}.middle-content .boxes #box.box7{
+    background: darkorchid;
+}.middle-content .boxes #box.box8{
+    background: hotpink;
+}.middle-content .boxes #box.box9{
+    background: indigo;
+}.middle-content .boxes #box.box10{
+    background: dodgerblue;
+}
+.container-about-page{
+    margin-bottom: 20px;
+}
+.middle-about {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 20px;
+    /*border-bottom: 1px dashed black;*/
+    padding: 2%
+}
+button {
+    background-color: white;
+    color: black;
+    border: black solid 2px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 10px 0 10px 0;
+}
+button:hover {
+    background-color: black;
+    color: white;
+    border: white solid 1px;
+}
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
-
+.learn-more{
+    margin: 5px 15px;
+    border-bottom: 1px dashed black;
+}
 .bottom-content .text-container {
     padding-right: 4%;
 }
